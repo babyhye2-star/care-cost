@@ -287,6 +287,25 @@
   .btn-mail:hover{background:rgba(255,255,255,.18)}
   .btn-mail svg{width:14px;height:14px}
 
+  /* ---------- 가입설계동의 ---------- */
+  .consent{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:18px 20px;border-radius:22px;
+    background:linear-gradient(112deg,#ffffff 0%,#fdf1ef 58%,#fbe3de 100%);
+    border:1px solid #f2dcd6;box-shadow:0 18px 40px -32px rgba(77,11,21,.5)}
+  .consent-mark{width:42px;height:42px;flex:none;border-radius:13px;display:grid;place-items:center;color:#fff;
+    background:linear-gradient(150deg,#c8162a,#8e1626);box-shadow:0 10px 20px -12px rgba(140,22,38,.9)}
+  .consent-mark svg{width:21px;height:21px}
+  .consent-body{flex:1 1 240px;min-width:0}
+  .consent-eyebrow{font-size:11px;font-weight:800;letter-spacing:.01em;color:var(--brand-deep)}
+  .consent-title{margin-top:3px;font-size:16px;font-weight:800;letter-spacing:-.035em;color:#231a1d}
+  .consent-line{margin-top:5px;font-size:12px;line-height:1.58;color:var(--ink-2)}
+  .btn-consent{display:inline-flex;flex:none;align-items:center;justify-content:center;gap:7px;
+    background:linear-gradient(135deg,#b3121f,#8e1626);color:#fff;text-decoration:none;font-size:13.5px;font-weight:800;
+    padding:13px 20px;border-radius:12px;letter-spacing:-.02em;white-space:nowrap;
+    box-shadow:0 14px 26px -16px rgba(140,22,38,.95);transition:.16s;position:relative;z-index:1}
+  .btn-consent:hover{transform:translateY(-1px);box-shadow:0 18px 30px -16px rgba(140,22,38,.95)}
+  .btn-consent:focus-visible{outline:2px solid #b3121f;outline-offset:2px}
+  .btn-consent svg{width:15px;height:15px;flex:none;opacity:.9}
+
   /* ---------- footer ---------- */
   .site-foot{max-width:1180px;margin:0 auto;padding:24px 24px 40px;border-top:1px solid var(--line);text-align:center}
   .site-foot p{font-size:11.5px;color:var(--ink-3);line-height:1.7}
@@ -337,6 +356,9 @@
     .cta{padding:20px;gap:14px;border-radius:20px}
     .cta-actions{flex:1 1 100%}
     .btn-call{width:100%}
+    .consent{padding:16px;gap:13px;border-radius:20px}
+    .consent-body{flex:1 1 100%}
+    .btn-consent{flex:1 1 100%;width:100%}
     .site-foot{padding:20px 16px 32px}
     .chart-help{text-align:left}
   }
@@ -612,6 +634,21 @@
           </ul>
         </div>
       </details>
+
+      <section class="consent" aria-labelledby="consentTitle">
+        <span class="consent-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3.2 5.6 5.9v5.3c0 4 2.7 7.3 6.4 8.6 3.7-1.3 6.4-4.6 6.4-8.6V5.9L12 3.2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9.3 11.7 2 2 3.5-3.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <div class="consent-body">
+          <p class="consent-eyebrow">메리츠화재 공식</p>
+          <h2 class="consent-title" id="consentTitle">맞춤 보장분석 가입설계동의</h2>
+          <p class="consent-line">보장분석을 진행하기 전 필요한 동의 절차를 메리츠화재 공식 페이지에서 직접 하실 수 있습니다.</p>
+        </div>
+        <a class="btn-consent" href="https://msea.meritzfire.com/mblCusReg.do?orgCd=326009593" target="_blank" rel="noopener noreferrer">
+          가입설계동의 바로가기
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h10v10M19 5l-9 9M5 9v10h10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </section>
 
       <section class="cta" aria-labelledby="ctaTitle">
         <div class="cta-photo" role="img" aria-label="메리츠화재 센트럴본부 김재란 부지점장 프로필 사진"></div>
